@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="caixa">
+        <h1>Faça seu cadastro aqui!</h1>
+
+        <form id="registro">
+            <div class="full-box">
+                <label for="nomeusuario">Nome Completo:</label required>
+                <input type="text" name="nomeusuario" id="nomeusuario" required placeholder="Digite seu nome...">
+
+            </div>
+            <div class="full-box">
+                <label for="emailusuario">E-mail</label required>
+                <input type="email" name="emailusuario" id="emailusuario" required placeholder="Digite seu e-mail...">
+            </div>
+
+            <div class="half-box">
+                <label for="telefoneusuario">Telefone (opcional):</label>
+                <input type="number" name="telefoneusuario" id="telefoneusuario" placeholder="Digite seu telefone...">
+
+            </div>
+            <div class="full-box" id="caixa2">
+                <h4>Informações do Endereço:</h4>
+                <fieldset id="enderecousuario">
+                <label for="logradourousuario">Logradouro:</label required>
+                <input type="text" name="logradourousuario" id="logradourousuario" required placeholder="Digite o logradouro...">
+                <br>
+                <label for="numerousuario">Número:</label required>
+                <input type="number" name="numerousuario" id="numerousuario" required placeholder="Digite o número...">
+                <br>
+                <label for="bairrousuario">Bairro (opcional):</label>
+                <input type="text" name="bairrousuario" id="bairrousuario" placeholder="Digite o bairro...">
+                <br>
+                <label for="cidade-estadousuario">Cidade e Estado:</label required>
+                <input type="text" name="cidade-estadousuario" id="cidade-estadousuario" required placeholder="Digite a cidade e estado..." >
+                <br>
+                <label for="cepusuario" >CEP:</label required>
+                <input type="number" name="cepusuario" id="cepusuario" required placeholder="Digite o CEP...">
+                </fieldset>
+            </div>
+
+            <br>
+            <div class="half-box">
+                <h4>Seu estado civil:</h4 required>
+                <select name="estadocivilusuario" id="estadocivilusuario" required>
+                    <option value="1">Selecione:</option>
+                    <option value="2">Solteiro(a)</option>
+                    <option value="3">Casado(a)</option>
+                    <option value="4">Divorciado(a)</option>
+                    <option value="5">Viúvo(a) </option>
+                    <option value="6">Separado(a)</option>
+                </select>
+
+            </div>    
+            <h4>Preferência para Contato:</h4>
+            <fieldset id="contatousuario">
+                <input type="radio" name="contatousuario" id="emailusuario" value="1">
+                <label for="email">E-mail.</label>
+                <input type="radio" name="contatousuario" id="telefoneusuario" value="2">
+                <label for="telefone">Telefone.</label>
+            </fieldset>
+            <br>
+            <div class="full-box" required>
+                <input type="checkbox" name="termos" id="termos">
+                <label for="termos">Li e concordo.</label>
+            </div>
+            <br>
+            <button type="submit">Enviar.</button required>
+            <button type="reset">Reiniciar preenchimento.</button>
+        </form>
+    </div>
+</body>
+</html>
